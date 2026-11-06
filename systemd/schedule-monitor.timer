@@ -1,0 +1,11 @@
+[Unit]
+Description=Schedule Monitor timer
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=1h
+RandomizedDelaySec=30s
+Unit=schedule-monitor.service
+
+[Install]
+WantedBy=timers.target
